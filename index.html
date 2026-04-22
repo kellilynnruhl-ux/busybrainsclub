@@ -6,7 +6,13 @@
   <title>Busy Brains Club</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-br from-[#FFF7FB] via-[#FFF9F5] to-[#F0F9FF] text-slate-800">
+<body class="bg-gradient-to-br from-[#FFF7FB] via-[#FFF9F5] to-[#F0F9FF] text-slate-800 relative overflow-x-hidden">
+  <!-- Soft Gradient Blobs -->
+<div class="pointer-events-none absolute inset-0 -z-10">
+  <div class="absolute top-[-80px] left-[-80px] h-72 w-72 rounded-full bg-[#FF6B6B]/20 blur-3xl"></div>
+  <div class="absolute top-[20%] right-[-100px] h-80 w-80 rounded-full bg-[#7C3AED]/20 blur-3xl"></div>
+  <div class="absolute bottom-[-100px] left-[20%] h-80 w-80 rounded-full bg-[#14B8A6]/20 blur-3xl"></div>
+</div>
 
   <!-- NAV -->
   <nav class="sticky top-0 z-50">
