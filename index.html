@@ -6,34 +6,153 @@
   <title>Busy Brains Club</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#FFFDF8] text-slate-800">
+<body class="bg-[#FFF9F5] text-slate-800">
 
   <!-- NAV -->
   <nav class="sticky top-0 z-50">
     <div class="mx-auto max-w-6xl px-6 py-3">
-      <div class="flex items-center justify-between rounded-2xl border border-slate-200 bg-white/80 backdrop-blur-md px-5 py-3 shadow-lg shadow-slate-200/60">
+      <div class="flex items-center justify-between rounded-2xl border border-pink-100 bg-white/80 backdrop-blur-md px-5 py-3 shadow-lg shadow-pink-100/60">
         <div class="flex items-center gap-3">
-          <div class="h-10 w-10 rounded-2xl bg-gradient-to-br from-[#3B5B92] to-[#14B8A6] flex items-center justify-center ">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 7c-2 0-3 1.5-3 3s1 3 3 3c-1.5 0-2.5 1.2-2.5 2.5S6.5 18 8 18h8c2 0 3-1.5 3-3s-1-3-3-3c1.5 0 2.5-1.2 2.5-2.5S17.5 7 16 7H8Z" fill="white" opacity="0.9"/>
-            <circle cx="9" cy="10" r="1" fill="#3B5B92"/>
-            <circle cx="15" cy="10" r="1" fill="#3B5B92"/>
-            <path d="M9 14c1.2 1 4.8 1 6 0" stroke="#3B5B92" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </div>
+          <div class="h-10 w-10 rounded-2xl bg-gradient-to-br from-[#FF6B6B] to-[#7C3AED] flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" fill="white" opacity="0.9"/>
+              <circle cx="9" cy="10" r="1" fill="#FF6B6B"/>
+              <circle cx="15" cy="10" r="1" fill="#7C3AED"/>
+              <path d="M9 14c1.2 1 4.8 1 6 0" stroke="#FF6B6B" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
           <div>
-            <h1 class="text-xl font-bold text-[#3B5B92] leading-tight">Busy Brains Club</h1>
+            <h1 class="text-xl font-bold text-[#7C3AED] leading-tight">Busy Brains Club</h1>
             <p class="text-xs text-slate-500">Shared Focus. Quiet Accountability.</p>
           </div>
         </div>
 
         <div class="flex items-center gap-6 text-sm font-medium">
-          <a href="#home" class="relative group">
-            Home
-            <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#3B5B92] transition-all group-hover:w-full"></span>
-          </a>
-          <a href="#about" class="relative group">
-            Info
+          <a href="#home" class="relative group">Home<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#7C3AED] transition-all group-hover:w-full"></span></a>
+          <a href="#about" class="relative group">Info<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#7C3AED] transition-all group-hover:w-full"></span></a>
+          <a href="#calendar" class="relative group">Calendar<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#7C3AED] transition-all group-hover:w-full"></span></a>
+          <a href="#contact" class="relative group">Contact<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#7C3AED] transition-all group-hover:w-full"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section id="home" class="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-12">
+    <div>
+      <div class="mb-4 inline-flex rounded-full bg-[#FFE4E6] px-4 py-2 text-sm text-[#BE123C]">
+        Gentle structure. Shared momentum. No pressure.
+      </div>
+      <h2 class="text-5xl font-bold">Get things done with support and accountability.</h2>
+      <p class="mt-6 text-lg text-slate-600">
+        Join quiet, structured body doubling sessions designed to help you focus and follow through.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#calendar" class="bg-[#7C3AED] text-white px-6 py-3 rounded-2xl shadow-md hover:scale-[1.02] transition">Reserve a Spot</a>
+        <a href="#about" class="border px-6 py-3 rounded-2xl">Learn More</a>
+      </div>
+    </div>
+
+    <div class="bg-white p-8 rounded-[2rem] border border-pink-100 shadow-xl shadow-pink-100/60">
+      <div class="flex items-center gap-2 mb-6">
+        <div class="h-10 w-10 rounded-2xl bg-[#EDE9FE] flex items-center justify-center">✨</div>
+        <h3 class="font-semibold text-lg text-slate-900">How it works</h3>
+      </div>
+
+      <div class="space-y-5 text-sm">
+
+        <div class="flex gap-4 items-start">
+          <div class="h-10 w-10 rounded-xl bg-[#FFE4E6] flex items-center justify-center">💬</div>
+          <div>
+            <p class="font-medium text-slate-900">Share your goal</p>
+            <p class="text-slate-600">Post your focus for the session in the chat at the start.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="h-10 w-10 rounded-xl bg-[#EDE9FE] flex items-center justify-center">💻</div>
+          <div>
+            <p class="font-medium text-slate-900">Quiet work time</p>
+            <p class="text-slate-600">Work independently alongside others.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="h-10 w-10 rounded-xl bg-[#DBEAFE] flex items-center justify-center">👥</div>
+          <div>
+            <p class="font-medium text-slate-900">Shared presence</p>
+            <p class="text-slate-600">The group’s quiet presence helps maintain momentum.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 items-start">
+          <div class="h-10 w-10 rounded-xl bg-[#FEF3C7] flex items-center justify-center">✔️</div>
+          <div>
+            <p class="font-medium text-slate-900">Quick check-out</p>
+            <p class="text-slate-600">Share what you accomplished.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section id="about" class="bg-white py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold text-[#7C3AED]">What is body doubling?</h3>
+      <p class="mt-6 text-lg text-slate-600">
+        Body doubling means working alongside others to improve focus and follow-through.
+        Participants work quietly and independently, sharing a goal at the beginning and a brief update at the end.
+      </p>
+    </div>
+  </section>
+
+  <!-- CALENDAR -->
+  <section id="calendar" class="py-20 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-4xl font-bold">Upcoming Groups</h3>
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+
+        <div class="border p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <h4 class="text-xl font-semibold">Morning Focus</h4>
+          <p>Tuesdays</p>
+          <p>9:00–10:30 AM</p>
+          <a href="#" class="block mt-4 bg-[#FF6B6B] text-white text-center py-2 rounded">Reserve & Pay</a>
+        </div>
+
+        <div class="border p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <h4 class="text-xl font-semibold">Midday Momentum</h4>
+          <p>Wednesdays</p>
+          <p>12:00–1:30 PM</p>
+          <a href="#" class="block mt-4 bg-[#7C3AED] text-white text-center py-2 rounded">Reserve & Pay</a>
+        </div>
+
+        <div class="border p-6 rounded-3xl shadow-sm hover:shadow-md transition">
+          <h4 class="text-xl font-semibold">Evening Reset</h4>
+          <p>Thursdays</p>
+          <p>6:00–7:30 PM</p>
+          <a href="#" class="block mt-4 bg-[#14B8A6] text-white text-center py-2 rounded">Reserve & Pay</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white py-20 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold text-[#7C3AED]">Contact</h3>
+      <p class="mt-4">Email: hello@yourdomain.com</p>
+    </div>
+  </section>
+
+  <footer class="text-center py-8 text-sm text-slate-500">
+    © 2026 Busy Brains Club • Not therapy
+  </footer>
+
+</body>
+</html>
             <span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#3B5B92] transition-all group-hover:w-full"></span>
           </a>
           <a href="#calendar" class="relative group">
