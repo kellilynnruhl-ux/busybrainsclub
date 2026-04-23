@@ -18,95 +18,89 @@
     <div class="absolute bottom-[-100px] left-[20%] h-80 w-80 rounded-full bg-[#14B8A6]/10 blur-3xl"></div>
   </div>
 
- <nav class="sticky top-0 z-50">
-    <div class="mx-auto max-w-6xl px-6 py-3">
-      <div class="flex items-center justify-between rounded-2xl border border-slate-100 bg-white/80 backdrop-blur-md px-5 py-3 shadow-lg shadow-purple-100/20">
-        
-        <div class="flex items-center gap-4">
-          <div class="flex-shrink-0">
-            <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M46 22C32 22 22 35 22 50C22 65 32 78 46 78C48 78 50 76 50 73V27C50 24 48 22 46 22Z" fill="#8DAA91"/>
-              <path d="M54 27V73C54 76 56 78 58 78C72 78 82 65 82 50C82 35 72 22 58 22C56 22 54 24 54 27Z" fill="#D4A5A5"/>
-              <circle cx="50" cy="50" r="6" fill="white" />
-            </svg>
-          </div>
-          <div>
-            <h1 class="text-xl font-bold tracking-tight text-slate-800 leading-none">Busy Brains Club</h1>
-            <p class="text-[10px] uppercase tracking-[0.12em] text-[#14B8A6] font-bold mt-1.5">Shared Focus • Quiet Momentum</p>
-          </div>
+ <nav class="fixed top-0 left-0 right-0 z-50 w-full px-6 py-4">
+    <div class="mx-auto max-w-6xl">
+        <div class="glass-nav flex items-center justify-between rounded-2xl px-6 py-3 shadow-xl shadow-indigo-100/20">
+            <div class="flex items-center gap-4">
+                <svg width="42" height="42" viewBox="0 0 100 100" fill="none">
+                    <path d="M46 22C32 22 22 35 22 50C22 65 32 78 46 78C48 78 50 76 50 73V27C50 24 48 22 46 22Z" fill="#2DD4BF"/>
+                    <path d="M54 27V73C54 76 56 78 58 78C72 78 82 65 82 50C82 35 72 22 58 22C56 22 54 24 54 27Z" fill="#7C3AED"/>
+                    <circle cx="50" cy="50" r="6" fill="white" />
+                </svg>
+                <div class="hidden sm:block">
+                    <h1 class="text-xl font-black tracking-tight text-slate-800 leading-none">Busy Brains Club</h1>
+                    <p class="text-[10px] uppercase tracking-[0.2em] text-[#2DD4BF] font-black mt-1.5">Shared Focus • Quiet Momentum</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-6 text-sm font-bold text-slate-600">
+                <a href="#about" class="hover:text-[#7C3AED] transition-colors">How it Works</a>
+                <a href="#calendar" class="bg-[#7C3AED] text-white px-6 py-2.5 rounded-xl hover:bg-[#6D28D9] transition-all hover:-translate-y-0.5 shadow-lg shadow-indigo-200">
+                    Join a Session
+                </a>
+            </div>
         </div>
-        <div class="flex items-center gap-6 text-sm font-medium">
-          <a href="#home" class="relative group">Home<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
-          <a href="#about" class="relative group">Info<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
-          <a href="#calendar" class="relative group">Calendar<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
-          <a href="#contact" class="relative group">Contact<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
-        </div>
-      </div>
     </div>
-  </nav>
+</nav>
 
-  <section id="home" class="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-16 items-center">
-    <div class="space-y-8">
-      <div class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">
-        <span class="relative flex h-2 w-2">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-        </span>
-        Next session starting soon
-      </div>
-      
-      <h2 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1]">
-        Get things done with <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#14B8A6]">shared momentum.</span>
-      </h2>
-      
-      <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
-        Join welcoming, low-pressure body doubling groups designed to help neurodivergent brains find focus and follow through.
-      </p>
-      
-      <div class="flex flex-wrap gap-4">
-        <a href="#calendar" class="bg-[#7C3AED] text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-purple-200 hover:scale-[1.03] active:scale-95 transition-all">
-          Reserve a Spot
-        </a>
-        <a href="#about" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all">
-          Learn More
-        </a>
-      </div>
+<section id="home" class="relative flex min-h-screen items-center pt-24">
+    <div class="mx-auto max-w-7xl px-8 md:px-16 w-full">
+        <div class="grid items-center gap-20 md:grid-cols-2">
+            
+            <div class="flex flex-col items-start space-y-10">
+                <div class="inline-flex items-center gap-2 rounded-full bg-[#2DD4BF]/10 px-4 py-2 text-sm font-black text-[#0D9488]">
+                    <span class="flex h-2 w-2 rounded-full bg-[#2DD4BF] animate-pulse"></span>
+                    Next session starting soon
+                </div>
+
+                <h2 class="text-6xl font-black tracking-tighter text-slate-900 md:text-8xl leading-[0.95]">
+                    Get things done with <span class="text-[#7C3AED]">shared momentum.</span>
+                </h2>
+
+                <p class="max-w-md text-xl font-medium leading-relaxed text-slate-500">
+                    Welcoming, low-pressure body doubling groups for neurodivergent brains to find focus.
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#calendar" class="rounded-2xl bg-[#7C3AED] px-10 py-5 text-lg font-black text-white shadow-2xl shadow-indigo-200 transition-all hover:scale-105 hover:bg-[#6D28D9]">
+                        Reserve a Spot
+                    </a>
+                    <a href="#about" class="rounded-2xl border-2 border-slate-100 bg-white px-10 py-5 text-lg font-black text-slate-600 transition-all hover:bg-slate-50">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-tr from-[#7C3AED]/20 to-[#F472B6]/20 blur-3xl rounded-[3rem]"></div>
+                
+                <div class="relative rounded-[3rem] border border-white bg-white/70 p-10 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.08)] backdrop-blur-xl">
+                    <div class="mb-10 flex items-center gap-4">
+                        <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-50 text-3xl shadow-inner">✨</div>
+                        <h3 class="text-2xl font-black text-slate-800 tracking-tight">Your Focus Roadmap</h3>
+                    </div>
+                    
+                    <div class="space-y-10">
+                        <div class="flex gap-6 group">
+                            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-pink-50 font-black text-pink-500 text-xl group-hover:scale-110 transition-transform">1</span>
+                            <div>
+                                <p class="font-black text-slate-800 text-xl leading-none mb-2">Pick a Tiny Win</p>
+                                <p class="text-slate-500 font-medium">Declare it out loud to switch your brain to "do" mode.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 group">
+                            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 font-black text-[#7C3AED] text-xl group-hover:scale-110 transition-transform">2</span>
+                            <div>
+                                <p class="font-black text-slate-800 text-xl leading-none mb-2">Quiet Co-working</p>
+                                <p class="text-slate-500 font-medium">Camera on or off. Simply being present creates the focus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-
-    <div class="bg-white/60 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white shadow-2xl shadow-purple-200/40 relative">
-      <div class="absolute -top-6 -right-6 h-20 w-20 bg-yellow-200 rounded-full blur-2xl opacity-50"></div>
-      <div class="flex items-center gap-3 mb-8">
-        <div class="h-12 w-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">✨</div>
-        <h3 class="font-bold text-xl text-slate-900">Your Focus Roadmap</h3>
-      </div>
-
-      <div class="space-y-6">
-        <div class="flex gap-5">
-          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-pink-100 flex items-center justify-center font-bold text-pink-600 italic">1</div>
-          <div>
-            <p class="font-bold text-slate-900 leading-tight">Pick a Tiny Win</p>
-            <p class="text-slate-600 text-sm mt-1">Drop your goal in the chat. Declaring it out loud helps your brain switch to "do" mode.</p>
-          </div>
-        </div>
-
-        <div class="flex gap-5">
-          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-indigo-100 flex items-center justify-center font-bold text-indigo-600 italic">2</div>
-          <div>
-            <p class="font-bold text-slate-900 leading-tight">Quiet Co-working</p>
-            <p class="text-slate-600 text-sm mt-1">Camera on or off—your choice. Just seeing others working creates a powerful anchor for your focus.</p>
-          </div>
-        </div>
-
-        <div class="flex gap-5">
-          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-teal-100 flex items-center justify-center font-bold text-teal-600 italic">3</div>
-          <div>
-            <p class="font-bold text-slate-900 leading-tight">Celebrate Progress</p>
-            <p class="text-slate-600 text-sm mt-1">Even if you only did 5 minutes, we count it. Shared wins build long-term momentum.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+</section>
 
   <section id="about" class="bg-white py-24 px-6 border-y border-slate-100">
     <div class="max-w-4xl mx-auto text-center">
