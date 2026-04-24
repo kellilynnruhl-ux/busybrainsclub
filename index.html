@@ -10,110 +10,121 @@
     
     body { 
       font-family: 'Outfit', sans-serif; 
-      background-color: #ffffff; /* Stark white base makes the blobs pop */
+      background-color: #ffffff;
+      color: #1a1d2d; /* The specific Deep Slate from your image */
     }
 
-    /* THE MAGIC GRADIENT (matches the button in your image) */
+    /* THE EXACT OMBRE FROM YOUR IMAGE */
     .vibrant-ombre {
       background: linear-gradient(135deg, #6358B5 0%, #D58D84 100%);
-      transition: all 0.3s ease;
-    }
-    .vibrant-ombre:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
     }
 
-    /* REFINED GLASSMORPHISM */
+    /* PREMIUM GLASS EFFECT */
     .glass-card { 
-      background: rgba(255, 255, 255, 0.5); /* Semi-transparent */
-      backdrop-filter: blur(20px); /* This creates the "frost" */
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.7); 
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+      background: rgba(255, 255, 255, 0.6); 
+      backdrop-filter: blur(25px) saturate(150%);
+      -webkit-backdrop-filter: blur(25px) saturate(150%);
+      border: 1px solid rgba(255, 255, 255, 0.8); 
+      box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.05), 0 18px 36px -18px rgba(0, 0, 0, 0.03);
     }
 
-    /* THE SUBTLE BLOBS */
-    .blob {
+    /* SOFT GLOW BACKGROUND BLOBS */
+    .bg-glow {
       position: absolute;
-      width: 500px;
-      height: 500px;
+      width: 600px;
+      height: 600px;
       border-radius: 50%;
-      filter: blur(100px); /* Heavy blur for that "glow" look */
+      filter: blur(120px);
       z-index: -1;
-      opacity: 0.25;
+      opacity: 0.2;
     }
   </style>
 </head>
-<body class="relative overflow-x-hidden">
+<body class="relative overflow-x-hidden antialiased">
 
-  <div class="blob bg-[#D7CFFF] top-[-100px] left-[-100px]"></div>
-  <div class="blob bg-[#C4F1E1] top-[20%] right-[-150px]"></div>
-  <div class="blob bg-[#FFE4D9] bottom-[-100px] left-[10%]"></div>
+  <div class="bg-glow bg-[#D7CFFF] -top-20 -left-20"></div>
+  <div class="bg-glow bg-[#C4F1E1] top-[20%] -right-40"></div>
+  <div class="bg-glow bg-[#FFE4D9] bottom-20 left-[10%]"></div>
 
-  <nav class="max-w-6xl mx-auto px-6 py-6">
+  <nav class="max-w-7xl mx-auto px-10 py-8">
     <div class="flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center">🧠</div>
-        <h1 class="text-xl font-bold text-slate-800">Busy Brains Club</h1>
+      <div class="flex items-center gap-4">
+        <svg width="32" height="32" viewBox="0 0 100 100" fill="none">
+          <path d="M46 22C32 22 22 35 22 50C22 65 32 78 46 78C48 78 50 76 50 73V27C50 24 48 22 46 22Z" fill="#8DAA91"/>
+          <path d="M54 27V73C54 76 56 78 58 78C72 78 82 65 82 50C82 35 72 22 58 22C56 22 54 24 54 27Z" fill="#D4A5A5"/>
+        </svg>
+        <span class="text-xl font-bold tracking-tight text-[#1a1d2d]">Busy Brains Club</span>
       </div>
-      <div class="flex items-center gap-8 text-sm font-semibold">
-        <a href="#" class="text-slate-500 hover:text-slate-800 transition">How it Works</a>
-        <a href="#" class="text-slate-500 hover:text-slate-800 transition">Calendar</a>
-        <a href="#" class="vibrant-ombre text-white px-6 py-2.5 rounded-xl shadow-lg">Log in</a>
+
+      <div class="flex items-center gap-10">
+        <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-500">
+          <a href="#about" class="hover:text-[#1a1d2d] transition">How it Works</a>
+          <a href="#calendar" class="hover:text-[#1a1d2d] transition">Calendar</a>
+        </div>
+        <a href="#" class="vibrant-ombre text-white px-7 py-2.5 rounded-xl text-sm font-bold shadow-lg shadow-indigo-100 hover:scale-105 transition-all">
+          Log in
+        </a>
       </div>
     </div>
   </nav>
 
-  <main class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-20 items-center">
+  <main class="max-w-7xl mx-auto px-10 py-12 md:py-24 flex flex-col md:flex-row items-center gap-20">
     
-    <div class="space-y-8">
-      <div class="inline-flex items-center gap-2 rounded-full border border-emerald-100 bg-white/80 px-4 py-2 text-sm font-medium text-emerald-600 shadow-sm">
-        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    <div class="w-full md:w-1/2 space-y-10">
+      <div class="inline-flex items-center gap-3 rounded-full border border-slate-100 bg-white/90 px-4 py-2 text-sm font-semibold text-emerald-600 shadow-sm">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
         Next session starting soon
       </div>
 
-      <h2 class="text-6xl font-bold text-slate-900 leading-[1.1]">
+      <h2 class="text-6xl md:text-7xl font-bold text-[#1a1d2d] leading-[1.1] tracking-tight">
         Get things done with shared momentum.
       </h2>
 
-      <p class="text-xl text-slate-500 font-light leading-relaxed">
+      <p class="text-xl text-slate-500 font-light leading-relaxed max-w-lg">
         Welcoming, low-pressure body doubling groups designed to help neurodivergent brains find focus and follow through.
       </p>
 
-      <div class="flex items-center gap-4">
-        <a href="#" class="vibrant-ombre text-white px-8 py-4 rounded-2xl font-bold shadow-xl">Reserve a Spot</a>
-        <a href="#" class="bg-white border border-slate-200 text-slate-600 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition">Learn More</a>
+      <div class="flex items-center gap-5">
+        <a href="#calendar" class="vibrant-ombre text-white px-9 py-4 rounded-2xl font-bold shadow-xl shadow-indigo-100 hover:-translate-y-1 transition-all">
+          Reserve a Spot
+        </a>
+        <a href="#about" class="bg-white border border-slate-200 text-slate-600 px-9 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all">
+          Learn More
+        </a>
       </div>
     </div>
 
-    <div class="glass-card p-12 rounded-[3rem]">
-      <div class="flex items-center gap-4 mb-12">
-        <div class="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-2xl shadow-sm">✨</div>
-        <h3 class="text-2xl font-bold text-slate-800 tracking-tight">The Flow</h3>
-      </div>
-
-      <div class="space-y-10">
-        <div class="flex gap-6">
-          <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">1</div>
-          <div>
-            <h4 class="font-bold text-slate-800 text-lg">Declare a Tiny Win</h4>
-            <p class="text-slate-500 leading-relaxed">Tell the group your focus. It anchors your brain.</p>
-          </div>
+    <div class="w-full md:w-1/2">
+      <div class="glass-card p-12 md:p-16 rounded-[3.5rem] relative">
+        <div class="flex items-center gap-5 mb-14">
+          <div class="w-14 h-14 bg-white/80 rounded-2xl flex items-center justify-center text-2xl shadow-sm border border-slate-50">✨</div>
+          <h3 class="text-3xl font-bold text-[#1a1d2d]">The Flow</h3>
         </div>
 
-        <div class="flex gap-6">
-          <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">2</div>
-          <div>
-            <h4 class="font-bold text-slate-800 text-lg">Quiet Connection</h4>
-            <p class="text-slate-500 leading-relaxed">Focus alongside others in peaceful silence.</p>
+        <div class="space-y-12">
+          <div class="flex gap-8">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">1</div>
+            <div>
+              <h4 class="font-bold text-[#1a1d2d] text-xl">Declare a Tiny Win</h4>
+              <p class="text-slate-500 mt-1 leading-relaxed">Tell the group your focus. It anchors your brain.</p>
+            </div>
           </div>
-        </div>
-
-        <div class="flex gap-6">
-          <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">3</div>
-          <div>
-            <h4 class="font-bold text-slate-800 text-lg">Celebrate Daily</h4>
-            <p class="text-slate-500 leading-relaxed">Every step forward is a shared win.</p>
+          <div class="flex gap-8">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">2</div>
+            <div>
+              <h4 class="font-bold text-[#1a1d2d] text-xl">Quiet Connection</h4>
+              <p class="text-slate-500 mt-1 leading-relaxed">Focus alongside others in peaceful silence.</p>
+            </div>
+          </div>
+          <div class="flex gap-8">
+            <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center font-bold text-slate-400">3</div>
+            <div>
+              <h4 class="font-bold text-[#1a1d2d] text-xl">Celebrate Daily</h4>
+              <p class="text-slate-500 mt-1 leading-relaxed">Every step forward is a shared win.</p>
+            </div>
           </div>
         </div>
       </div>
