@@ -1,91 +1,264 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Togetherly | Focus, Side-by-Side</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Outfit', sans-serif; background-color: #fdfaf8; }
-        h1, h2 { font-family: 'Quicksand', sans-serif; }
-        .soft-glow { box-shadow: 0 0 40px rgba(234, 88, 12, 0.05); }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Busy Brains Club | Body Doubling for Focus</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap');
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
 </head>
-<body class="text-stone-700 antialiased">
+<body class="bg-gradient-to-br from-[#FFF7FB] via-[#FFF9F5] to-[#F0F9FF] text-slate-800 relative overflow-x-hidden">
 
-    <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
-        <div class="text-2xl font-bold text-orange-800 tracking-tight">togetherly.</div>
-        <div class="space-x-8 text-sm font-medium">
-            <a href="#how-it-works" class="hover:text-orange-700">How it works</a>
-            <a href="#schedule" class="hover:text-orange-700">Schedule</a>
-            <button class="border-2 border-stone-800 px-5 py-2 rounded-full hover:bg-stone-800 hover:text-white transition">Sign In</button>
+  <div class="pointer-events-none absolute inset-0 -z-10">
+    <div class="absolute top-[-80px] left-[-80px] h-72 w-72 rounded-full bg-[#FF6B6B]/10 blur-3xl"></div>
+    <div class="absolute top-[20%] right-[-100px] h-80 w-80 rounded-full bg-[#7C3AED]/10 blur-3xl"></div>
+    <div class="absolute bottom-[-100px] left-[20%] h-80 w-80 rounded-full bg-[#14B8A6]/10 blur-3xl"></div>
+  </div>
+
+ <nav class="sticky top-0 z-50">
+    <div class="mx-auto max-w-6xl px-6 py-3">
+      <div class="flex items-center justify-between rounded-2xl border border-slate-100 bg-white/80 backdrop-blur-md px-5 py-3 shadow-lg shadow-purple-100/20">
+        
+        <div class="flex items-center gap-4">
+          <div class="flex-shrink-0">
+            <svg width="45" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M46 22C32 22 22 35 22 50C22 65 32 78 46 78C48 78 50 76 50 73V27C50 24 48 22 46 22Z" fill="#8DAA91"/>
+              <path d="M54 27V73C54 76 56 78 58 78C72 78 82 65 82 50C82 35 72 22 58 22C56 22 54 24 54 27Z" fill="#D4A5A5"/>
+              <circle cx="50" cy="50" r="6" fill="white" />
+            </svg>
+          </div>
+          <div>
+            <h1 class="text-xl font-bold tracking-tight text-slate-800 leading-none">Busy Brains Club</h1>
+            <p class="text-[10px] uppercase tracking-[0.12em] text-[#8DAA91] font-bold mt-1.5">Shared Focus • Quiet Momentum</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 text-sm font-medium">
+          <a href="#home" class="relative group">Home<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
+          <a href="#about" class="relative group">Info<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
+          <a href="#calendar" class="relative group">Calendar<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
+          <a href="#contact" class="relative group">Contact<span class="absolute left-0 -bottom-1 h-0.5 w-0 bg-[#8DAA91] transition-all group-hover:w-full"></span></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="mx-auto max-w-6xl px-6 py-16 md:py-24 grid md:grid-cols-2 gap-16 items-center">
+    <div class="space-y-8">
+      <div class="inline-flex items-center gap-2 rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
+        Next session starting soon
+      </div>
+      
+      <h2 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1]">
+        Get things done with <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#7C3AED] to-[#14B8A6]">shared momentum.</span>
+      </h2>
+      
+      <p class="text-xl text-slate-600 leading-relaxed max-w-lg">
+        Join welcoming, low-pressure body doubling groups designed to help neurodivergent brains find focus and follow through.
+      </p>
+      
+      <div class="flex flex-wrap gap-4">
+        <a href="#calendar" class="bg-[#7C3AED] text-white px-8 py-4 rounded-2xl font-bold shadow-xl shadow-purple-200 hover:scale-[1.03] active:scale-95 transition-all">
+          Reserve a Spot
+        </a>
+        <a href="#about" class="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-2xl font-bold hover:bg-slate-50 transition-all">
+          Learn More
+        </a>
+      </div>
+    </div>
+
+    <div class="bg-white/60 backdrop-blur-xl p-8 rounded-[2.5rem] border border-white shadow-2xl shadow-purple-200/40 relative">
+      <div class="absolute -top-6 -right-6 h-20 w-20 bg-yellow-200 rounded-full blur-2xl opacity-50"></div>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-12 w-12 rounded-2xl bg-purple-100 flex items-center justify-center text-2xl">✨</div>
+        <h3 class="font-bold text-xl text-slate-900">Your Focus Roadmap</h3>
+      </div>
+
+      <div class="space-y-6">
+        <div class="flex gap-5">
+          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-pink-100 flex items-center justify-center font-bold text-pink-600 italic">1</div>
+          <div>
+            <p class="font-bold text-slate-900 leading-tight">Pick a Tiny Win</p>
+            <p class="text-slate-600 text-sm mt-1">Drop your goal in the chat. Declaring it out loud helps your brain switch to "do" mode.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-indigo-100 flex items-center justify-center font-bold text-indigo-600 italic">2</div>
+          <div>
+            <p class="font-bold text-slate-900 leading-tight">Quiet Co-working</p>
+            <p class="text-slate-600 text-sm mt-1">Camera on or off—your choice. Just seeing others working creates a powerful anchor for your focus.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex-shrink-0 h-10 w-10 rounded-xl bg-teal-100 flex items-center justify-center font-bold text-teal-600 italic">3</div>
+          <div>
+            <p class="font-bold text-slate-900 leading-tight">Celebrate Progress</p>
+            <p class="text-slate-600 text-sm mt-1">Even if you only did 5 minutes, we count it. Shared wins build long-term momentum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-white py-24 px-6 border-y border-slate-100">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl md:text-4xl font-bold text-slate-900">What is body doubling?</h3>
+      <p class="mt-8 text-xl text-slate-600 leading-relaxed italic">
+        "It's like having a gym buddy, but for your to-do list."
+      </p>
+      <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+        For many neurodivergent people, starting a task is the hardest part. Body doubling is a productivity strategy where you work alongside another person to improve focus. It’s not about being watched—it’s about <strong>shared presence</strong> reducing the executive function load.
+      </p>
+    </div>
+  </section>
+
+  <section id="calendar" class="py-24 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+        <div>
+          <h3 class="text-4xl font-bold text-slate-900">Upcoming Sessions</h3>
+          <p class="text-slate-600 mt-2 text-lg font-medium">Small groups, maximum focus.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="group bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all">
+          <span class="text-xs font-bold uppercase tracking-widest text-pink-500">Morning Energy</span>
+          <h4 class="text-2xl font-bold text-slate-900 mt-2">Morning Reset</h4>
+          <div class="mt-4 space-y-1 text-slate-600 font-medium">
+            <p class="flex items-center gap-2"><span>🗓️</span> Tuesdays</p>
+            <p class="flex items-center gap-2"><span>⏰</span> 9:00 – 10:30 AM</p>
+          </div>
+          <a href="https://venmo.com/YourHandle" target="_blank" class="block mt-8 bg-[#14B8A6] text-white text-center py-3 rounded-xl font-bold group-hover:bg-[#0D9488] transition-colors shadow-lg shadow-teal-100">
+            Reserve for $15
+          </a>
+        </div>
+
+        <div class="group bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all">
+          <span class="text-xs font-bold uppercase tracking-widest text-purple-500">Peak Performance</span>
+          <h4 class="text-2xl font-bold text-slate-900 mt-2">Midday Get-It-Done</h4>
+          <div class="mt-4 space-y-1 text-slate-600 font-medium">
+            <p class="flex items-center gap-2"><span>🗓️</span> Wednesdays</p>
+            <p class="flex items-center gap-2"><span>⏰</span> 12:00 – 1:30 PM</p>
+          </div>
+          <a href="https://venmo.com/YourHandle" target="_blank" class="block mt-8 bg-[#7C3AED] text-white text-center py-3 rounded-xl font-bold group-hover:bg-[#6D28D9] transition-colors shadow-lg shadow-purple-100">
+            Reserve for $15
+          </a>
+        </div>
+
+        <div class="group bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl hover:border-purple-200 transition-all">
+          <span class="text-xs font-bold uppercase tracking-widest text-indigo-500">Evening Calm</span>
+          <h4 class="text-2xl font-bold text-slate-900 mt-2">Evening Wind-Down</h4>
+          <div class="mt-4 space-y-1 text-slate-600 font-medium">
+            <p class="flex items-center gap-2"><span>🗓️</span> Thursdays</p>
+            <p class="flex items-center gap-2"><span>⏰</span> 6:00 – 7:30 PM</p>
+          </div>
+          <a href="https://venmo.com/YourHandle" target="_blank" class="block mt-8 bg-[#4F46E5] text-white text-center py-3 rounded-xl font-bold group-hover:bg-[#4338CA] transition-colors shadow-lg shadow-indigo-100">
+            Reserve for $15
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="bg-slate-900 py-24 px-6 text-white rounded-t-[3rem]">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-4xl font-bold">Have questions?</h3>
+      <p class="mt-4 text-slate-400 text-lg">We're here to help you find your flow.</p>
+      <div class="mt-10 flex flex-col items-center gap-4">
+        <a href="mailto:hello@busybrains.club" class="text-2xl font-bold text-teal-400 hover:underline">hello@busybrains.club</a>
+        <div class="h-px w-20 bg-slate-700 my-4"></div>
+        <p class="text-slate-500 italic max-w-md">"The best work isn't always done alone. Sometimes it just takes another brain in the room."</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-900 text-center py-8 text-xs text-slate-500 border-t border-slate-800">
+    © 2026 Busy Brains Club • Not therapy • Designed with Care for ADHD/Neurodivergent communities.
+  </footer>
+
+</body>
+</html>                </div>
+
+                <div class="flex items-center gap-8 text-sm font-semibold text-slate-600">
+                    <a href="#about" class="hover:text-[#A3EBC1] transition-colors">How it Works</a>
+                    <a href="#calendar" class="bg-[#B8B8E0] text-white px-5 py-2.5 rounded-xl hover:bg-[#a3a3d1] transition-all shadow-md shadow-indigo-100/50">
+                        Book a Session
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <header class="max-w-3xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-bold text-stone-900 mb-6 leading-tight">Getting things done feels better together.</h1>
-        <p class="text-xl text-stone-600 mb-10 leading-relaxed">
-            Body doubling is a simple productivity tool: we work on our own tasks, 
-            together on Zoom. It’s quiet, supportive, and remarkably effective.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#schedule" class="bg-orange-700 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:bg-orange-800 transition shadow-lg">View Today's Sessions</a>
-            <a href="#how-it-works" class="bg-white border border-stone-200 px-8 py-4 rounded-2xl font-semibold text-lg hover:border-orange-200 transition">Learn More</a>
-        </div>
-    </header>
+    <section id="home" class="relative flex min-h-screen items-center justify-center pt-20">
+        <div class="mx-auto max-w-7xl px-8 md:px-16 w-full">
+            <div class="grid items-center gap-16 md:grid-cols-2">
+                
+                <div class="flex flex-col items-start space-y-8">
+                    <div class="inline-flex items-center gap-2 rounded-full bg-[#A3EBC1]/20 px-4 py-2 text-sm font-bold text-[#5B7A60]">
+                        <span class="relative flex h-2 w-2">
+                            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#A3EBC1] opacity-75"></span>
+                            <span class="relative inline-flex h-2 w-2 rounded-full bg-[#A3EBC1]"></span>
+                        </span>
+                        Next session starting soon
+                    </div>
 
-    <section id="how-it-works" class="max-w-5xl mx-auto px-6 py-16">
-        <div class="grid md:grid-cols-3 gap-12 text-center">
-            <div>
-                <div class="text-3xl mb-4">🏠</div>
-                <h3 class="text-xl font-bold mb-2">Show Up</h3>
-                <p class="text-stone-500 leading-relaxed">Join a scheduled Zoom block. Keep your camera on or off—whatever makes you feel comfortable.</p>
-            </div>
-            <div>
-                <div class="text-3xl mb-4">📝</div>
-                <h3 class="text-xl font-bold mb-2">State Your Goal</h3>
-                <p class="text-stone-500 leading-relaxed">We share what we're working on in the chat. This small act of intention changes everything.</p>
-            </div>
-            <div>
-                <div class="text-3xl mb-4">🚀</div>
-                <h3 class="text-xl font-bold mb-2">Focus Gently</h3>
-                <p class="text-stone-500 leading-relaxed">Work in focused sprints. When the timer rings, we celebrate our progress together.</p>
+                    <h2 class="text-5xl font-extrabold tracking-tight text-slate-900 md:text-7xl leading-[1.1]">
+                        Get things done with <span class="text-[#B8B8E0]">shared momentum.</span>
+                    </h2>
+
+                    <p class="max-w-lg text-lg leading-relaxed text-slate-600">
+                        Join small, welcoming body doubling groups designed to help you focus, stay motivated, and make progress on the things that matter to you.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#calendar" class="rounded-2xl bg-[#B8B8E0] px-8 py-4 font-bold text-white shadow-xl shadow-indigo-100/50 transition-all hover:scale-105 hover:bg-[#a3a3d1]">
+                            Reserve a Spot
+                        </a>
+                        <a href="#about" class="rounded-2xl border border-slate-200 bg-white px-8 py-4 font-bold text-slate-600 transition-all hover:bg-slate-50">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative hidden md:block">
+                    <div class="rounded-[2.5rem] border border-white bg-white/40 p-10 shadow-2xl shadow-slate-200/50 backdrop-blur-xl">
+                        <div class="mb-8 flex items-center gap-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#F0F0FA] text-2xl">✨</div>
+                            <h3 class="text-2xl font-bold text-slate-800">Your Focus Roadmap</h3>
+                        </div>
+                        
+                        <div class="space-y-8">
+                            <div class="flex gap-5">
+                                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 font-bold text-rose-400 text-lg">1</span>
+                                <div>
+                                    <p class="font-bold text-slate-800 text-lg">Pick a Tiny Win</p>
+                                    <p class="text-slate-600">Drop your goal in the chat. Just one thing.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-5">
+                                <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 font-bold text-[#B8B8E0] text-lg">2</span>
+                                <div>
+                                    <p class="font-bold text-slate-800 text-lg">Quiet Connection</p>
+                                    <p class="text-slate-600">Work alongside others in peaceful, focused silence.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 -z-10 h-64 w-64 rounded-full bg-[#A3EBC1]/20 blur-3xl"></div>
+                </div>
+
             </div>
         </div>
     </section>
-
-    <section id="schedule" class="max-w-3xl mx-auto px-6 py-20">
-        <div class="bg-white rounded-3xl p-8 md:p-12 soft-glow border border-stone-100">
-            <h2 class="text-3xl font-bold mb-8 text-center">Upcoming Sessions</h2>
-            
-            <div class="space-y-6">
-                <div class="flex items-center justify-between border-b border-stone-50 pb-6">
-                    <div>
-                        <p class="text-sm font-semibold text-orange-600 uppercase tracking-widest">Morning Focus</p>
-                        <h4 class="text-lg font-bold">9:00 AM — 10:30 AM</h4>
-                    </div>
-                    <button class="bg-stone-900 text-white px-6 py-2 rounded-xl text-sm font-medium hover:bg-orange-700 transition">Book Spot</button>
-                </div>
-
-                <div class="flex items-center justify-between border-b border-stone-50 pb-6">
-                    <div>
-                        <p class="text-sm font-semibold text-stone-400 uppercase tracking-widest">Afternoon Flow</p>
-                        <h4 class="text-lg font-bold">1:00 PM — 2:30 PM</h4>
-                    </div>
-                    <button class="bg-stone-900 text-white px-6 py-2 rounded-xl text-sm font-medium hover:bg-orange-700 transition">Book Spot</button>
-                </div>
-            </div>
-
-            <p class="mt-8 text-center text-sm text-stone-400 italic">
-                All sessions are hosted on Zoom. Links are sent 15 minutes before we start.
-            </p>
-        </div>
-    </section>
-
-    <footer class="py-12 text-center text-stone-400 text-sm">
-        <p>&copy; 2026 Togetherly. Made for focus.</p>
-    </footer>
 
 </body>
 </html>
