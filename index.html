@@ -358,17 +358,6 @@
       box-shadow: 0 14px 34px rgba(51, 32, 95, 0.10);
     }
 
-    #about .section-heading h2 {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 22px;
-      border: 1px solid transparent;
-      background:
-        linear-gradient(rgba(255,255,255,0.72), rgba(255,255,255,0.72)) padding-box,
-        linear-gradient(135deg, rgba(232,137,103,0.9), rgba(109,90,155,0.85), rgba(185,216,199,0.95)) border-box;
-      box-shadow: 0 14px 34px rgba(51, 32, 95, 0.10);
-    }
-
     .section-heading p {
       margin-top: 14px;
       color: var(--muted);
@@ -507,24 +496,54 @@
 
     .schedule-row {
       display: grid;
-      grid-template-columns: 120px 1fr auto;
-      gap: 16px;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
       align-items: center;
-      padding: 18px 20px;
-      border-radius: 20px;
+      padding: 22px;
+      border-radius: 24px;
       background: rgba(255, 255, 255, 0.76);
       border: 1px solid rgba(51, 32, 95, 0.08);
+      box-shadow: 0 18px 45px rgba(51, 32, 95, 0.07);
     }
 
-    .schedule-row strong {
+    .session-info {
+      display: grid;
+      gap: 8px;
+    }
+
+    .session-info strong {
+      color: var(--plum);
+      font-size: 1.18rem;
+      letter-spacing: -0.025em;
+    }
+
+    .session-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .session-info p {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .payment-note {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 650;
+    }
+
+    .payment-note strong {
       color: var(--plum);
     }
 
-    .schedule-row span {
-      color: var(--muted);
-    }
-
     .tag {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
       padding: 7px 12px;
       border-radius: 999px;
       background: var(--mint);
@@ -532,6 +551,31 @@
       font-size: 0.82rem;
       font-weight: 800;
       white-space: nowrap;
+    }
+
+    .tag.price {
+      background: rgba(246, 216, 199, 0.72);
+      color: #8a4d39;
+    }
+
+    .session-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      color: white;
+      background: linear-gradient(135deg, var(--plum), var(--coral));
+      font-weight: 850;
+      white-space: nowrap;
+      box-shadow: 0 12px 24px rgba(232, 137, 103, 0.20);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .session-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px rgba(51, 32, 95, 0.16);
     }
 
     .faq {
@@ -671,7 +715,7 @@
           <a href="#schedule">Groups</a>
           <a href="#community">Community</a>
           <a href="#faq">FAQ</a>
-        <a href="https://tally.so/r/RG8jKQ" target="_blank" class="button primary">Join the Waitlist</a>
+          <a href="#join" class="nav-cta">Join Us</a>
         </div>
       </nav>
 
@@ -683,7 +727,8 @@
             Welcoming virtual body doubling groups for neurodivergent folks, procrastinators, perfectionists, and anyone who focuses better with a little shared momentum.
           </p>
           <div class="actions">
-<a href="https://tally.so/r/RG8jKQ" target="_blank" class="button primary">Join the Waitlist</a>            <a href="#how" class="button secondary">See How It Works</a>
+            <a href="#join" class="button primary">Join the Waitlist</a>
+            <a href="#how" class="button secondary">See How It Works</a>
           </div>
         </div>
 
@@ -764,22 +809,55 @@
     <section id="schedule">
       <div class="section-heading">
         <h2>Find a group that fits your brain.</h2>
+        <p>Choose a session time, send payment through Venmo, and include your email in the payment note so your Zoom link can be sent to you.</p>
       </div>
       <div class="schedule">
         <div class="schedule-row">
-          <strong>Morning Focus: Wednesdays  10 am MST</strong>
-          <span>A one-hour work session to start the day with structure and momentum</span>
-          <span class="tag">60 minutes</span>
+          <div class="session-info">
+            <strong>Morning Focus</strong>
+            <div class="session-meta">
+              <span class="tag">Wednesdays · 10:00 AM MST</span>
+              <span class="tag">60 minutes</span>
+              <span class="tag price">$5</span>
+            </div>
+            <p>A one-hour work session to start the day with structure, quiet connection, and shared momentum.</p>
+          </div>
+          <div>
+            <a href="https://venmo.com/kelli-ruhl" target="_blank" class="session-button">Reserve your spot</a>
+            <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
+          </div>
         </div>
+
         <div class="schedule-row">
-          <strong>Midday Reset: Opening 6/2/2026</strong>
-          <span>A practical body doubling hour for admin, chores, email, and life tasks</span>
-          <span class="tag">60 minutes</span>
+          <div class="session-info">
+            <strong>Midday Reset</strong>
+            <div class="session-meta">
+              <span class="tag">Opening June 2, 2026</span>
+              <span class="tag">60 minutes</span>
+              <span class="tag price">$5</span>
+            </div>
+            <p>A practical body doubling hour for admin, chores, email, planning, and everyday life tasks.</p>
+          </div>
+          <div>
+            <a href="https://venmo.com/kelli-ruhl" target="_blank" class="session-button">Reserve your spot</a>
+            <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
+          </div>
         </div>
+
         <div class="schedule-row">
-          <strong>Finish-It Hour: Opening 6/1/2026</strong>
-          <span>A quiet space to wrap loose ends before moving on with your day</span>
-          <span class="tag">60 minutes</span>
+          <div class="session-info">
+            <strong>Finish-It Hour</strong>
+            <div class="session-meta">
+              <span class="tag">Opening June 1, 2026</span>
+              <span class="tag">60 minutes</span>
+              <span class="tag price">$5</span>
+            </div>
+            <p>A quiet space to wrap loose ends, make progress, and head into the rest of your day with a win.</p>
+          </div>
+          <div>
+            <a href="https://venmo.com/kelli-ruhl" target="_blank" class="session-button">Reserve your spot</a>
+            <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
+          </div>
         </div>
       </div>
     </section>
@@ -836,7 +914,8 @@
       <p>
         Join the founding waitlist and be the first to hear when groups open. Starting counts, small steps matter, and you do not have to do the hard thing alone.
       </p>
-<a href="https://tally.so/r/RG8jKQ" target="_blank" class="button primary">Join the Waitlist</a>    </section>
+      <a href="https://tally.so/r/RG8jKQ" target="_blank" class="button primary">Join the Waitlist</a>
+    </section>
 
     <footer>
       <p>© 2026 Busy Brains Club. All rights reserved.</p>
