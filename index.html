@@ -112,12 +112,12 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 24px;
-      width: min(1120px, 100%);
+      gap: 18px;
+      width: min(980px, 100%);
       margin: 0 auto;
-      padding: 18px 22px 18px 24px;
+      padding: 12px 14px 12px 16px;
       border: 1px solid rgba(255, 255, 255, 0.7);
-      border-radius: 24px;
+      border-radius: 18px;
       background: rgba(255, 255, 255, 0.72);
       backdrop-filter: blur(18px);
       box-shadow: 0 16px 35px rgba(47, 32, 81, 0.1);
@@ -126,7 +126,7 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 10px;
       font-weight: 800;
       color: var(--plum);
     }
@@ -140,8 +140,8 @@
     }
 
     .brand-text small {
-      margin-top: 6px;
-      font-size: 0.68rem;
+      margin-top: 4px;
+      font-size: 0.58rem;
       font-weight: 600;
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -151,19 +151,19 @@
     .logo {
       display: grid;
       place-items: center;
-      width: 38px;
-      height: 38px;
+      width: 28px;
+      height: 28px;
       border-radius: 50%;
       background: linear-gradient(135deg, var(--plum), var(--coral));
       color: white;
-      font-size: 1.1rem;
+      font-size: 15px;
     }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 26px;
-      font-size: 1rem;
+      gap: 18px;
+      font-size: 0.88rem;
       color: #3f3949;
     }
 
@@ -172,7 +172,7 @@
     }
 
     .nav-cta {
-      padding: 12px 22px;
+      padding: 10px 17px;
       border-radius: 999px;
       color: white;
       background: linear-gradient(135deg, var(--plum), var(--coral));
@@ -711,6 +711,7 @@
           </span>
         </a>
         <div class="nav-links">
+          <a href="#how">How it Works</a>
           <a href="#schedule">Groups</a>
           <a href="#community">Community</a>
           <a href="#faq">FAQ</a>
@@ -727,7 +728,7 @@
           </p>
           <div class="actions">
             <a href="#join" class="button primary">Join the Waitlist</a>
-            <a href="#schedule" class="button secondary">View Sessions</a>
+            <a href="#how" class="button secondary">See How It Works</a>
           </div>
         </div>
 
@@ -779,6 +780,32 @@
       </div>
     </section>
 
+    <section class="split" id="how">
+      <div class="feature-box">
+        <h2>How it works</h2>
+        <p>
+          Each group begins with a quick hello and a simple goal shared in the chat. Cameras stay on to support presence and accountability, while microphones remain muted during the full hour of focused work time. At the end, everyone shares progress in the chat and we send you off with a warm goodbye. The goal is to make getting started feel easier and more doable. Sometimes a little shared presence is exactly what the nervous system needs to settle in and begin.
+        </p>
+      </div>
+      <div class="cards" style="grid-template-columns: 1fr;">
+        <article class="card">
+          <div class="pill-icon">1</div>
+          <h3>Choose your task</h3>
+          <p>Bring anything you have been avoiding, delaying, or wanting support to complete.</p>
+        </article>
+        <article class="card">
+          <div class="pill-icon">2</div>
+          <h3>One hour of focused time</h3>
+          <p>Settle into a full hour of quiet work with cameras on, audio off, and shared momentum in the room.</p>
+        </article>
+        <article class="card">
+          <div class="pill-icon">3</div>
+          <h3>Share your progress</h3>
+          <p>At the end, drop your progress in the chat, say goodbye, and take the win into the rest of your day.</p>
+        </article>
+      </div>
+    </section>
+
     <section id="schedule">
       <div class="section-heading">
         <h2>Find a group that fits your brain.</h2>
@@ -796,7 +823,7 @@
             <p>A one-hour work session to start the day with structure, quiet connection, and shared momentum.</p>
           </div>
           <div>
-            <a href="https://venmo.com/busybrainsclub" target="_blank" class="session-button">Reserve your spot</a>
+            <a href="https://venmo.com/busybrainsclub” target="_blank" class="session-button">Reserve your spot</a>
             <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
           </div>
         </div>
@@ -812,7 +839,7 @@
             <p>A practical body doubling hour for admin, chores, email, planning, and everyday life tasks.</p>
           </div>
           <div>
-            <a href="https://venmo.com/busybrainsclub" target="_blank" class="session-button">Reserve your spot</a>
+            <a href="https://venmo.com/busybrainsclub” target="_blank" class="session-button">Reserve your spot</a>
             <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
           </div>
         </div>
@@ -828,7 +855,7 @@
             <p>A quiet space to wrap loose ends, make progress, and head into the rest of your day with a win.</p>
           </div>
           <div>
-            <a href="https://venmo.com/busybrainsclub" target="_blank" class="session-button">Reserve your spot</a>
+            <a href="https://venmo.com/busybrainsclub” target="_blank" class="session-button">Reserve your spot</a>
             <div class="payment-note"><strong>Important:</strong> include your email in the Venmo note to receive the Zoom link.</div>
           </div>
         </div>
@@ -873,19 +900,11 @@
         </details>
         <details>
           <summary>What kinds of tasks can I bring?</summary>
-          <p>Almost all everyday tasks are welcome: paperwork, dishes, studying, emails, creative projects, cleaning, planning, or resting intentionally. For the safety and comfort of everyone, all participants must be fully clothed at all times, and no weapons, drugs, or other hazardous materials should be present or visible during sessions.</p>
+          <p>Anything that helps your life move forward: paperwork, dishes, studying, emails, creative projects, cleaning, planning, or resting intentionally.</p>
         </details>
         <details>
           <summary>Is this therapy?</summary>
           <p>No. These groups are for structure, accountability, and shared focus. They are not a substitute for therapy or mental health treatment.</p>
-        </details>
-        <details>
-          <summary>What are the expectations for behavior in sessions?</summary>
-          <p>Busy Brains Club is designed to be a safe, respectful, and supportive space. I reserve the right to remove any participant from a session if their behavior is disruptive, disrespectful, harmful, or otherwise unsafe to others. This helps maintain a calm and focused environment for everyone.</p>
-        </details>
-        <details>
-          <summary>Anything else I should know?</summary>
-          <p>This space is not designed for crisis support. If you are in immediate distress or need urgent help, please seek appropriate professional or emergency support. Participants are responsible for their own well-being, choices, and how they use their time during sessions. Sessions rely on internet and third-party platforms (such as Zoom), and occasional technical disruptions may occur.</p>
         </details>
       </div>
     </section>
